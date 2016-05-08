@@ -6,6 +6,7 @@ package theschmidtbros.programmerscalculator;
         import android.widget.Button;
         import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView displayBox;
@@ -137,36 +138,42 @@ public class MainActivity extends AppCompatActivity {
             clear = (Button) findViewById(R.id.buttonClr);
 
             //Set up listeners
+            assert add != null;
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opClick("+");
                 }
             });
+            assert sub != null;
             sub.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opClick("-");
                 }
             });
+            assert mult != null;
             mult.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opClick("*");
                 }
             });
+            assert div != null;
             div.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     opClick("/");
                 }
             });
+            assert eql != null;
             eql.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     eqlClick();
                 }
             });
+            assert clear != null;
             clear.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
